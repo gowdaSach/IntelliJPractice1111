@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
-            features = ".//src/test/java/features",
+            features = "src/test/java/features",
             glue="stepDefinitions",
             dryRun = true,
             tags = "@NEW-2023",
@@ -16,4 +16,5 @@ import org.junit.runner.RunWith;
                                 "junit:target/cucumber-reports/Cucumber.xml"}
     )
     public class TestRunner {
+
 }
