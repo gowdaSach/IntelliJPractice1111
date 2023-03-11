@@ -1,7 +1,7 @@
 Feature: Login to DemoGuru99 Page
 
   Scenario Outline: User login to DemoGuru99 page with valid credentials
-    Given User launches chrome browser
+    Given User launches chrome browser with new instance
     And User search for the URL "https://demo.guru99.com/test/login.html"
     When User provides <username> and <password>
     And User clicks on submit button
