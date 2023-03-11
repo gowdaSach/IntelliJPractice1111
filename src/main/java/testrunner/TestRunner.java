@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
             features = ".//src/test/java/features",
             glue="",
             dryRun = true,
-            plugin = {"pretty","html:test-output"}
-
+            plugin = {"pretty","html:test-output",
+                                "junit:target/cucumber-reports/Cucumber.xml"}
     )
     public class TestRunner {
 }
